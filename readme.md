@@ -9,6 +9,8 @@ The only way to curcumvent this is to use Goosemod's OpenAsar and it's Mu server
 (If you want to mod your Discord client and package it you should use a reverse enginnered alternative
 instead of straight up using Discord's source lol)
 
+Splash pops up while installing? Modify OpenAsar to [add few lines of code (+ a module) to fix that](https://github.com/electron/windows-installer#handling-squirrel-events)
+
 ## Required Files in appData directory
 
 ### Root directory
