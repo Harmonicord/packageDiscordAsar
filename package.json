@@ -1,0 +1,26 @@
+{
+  "name": "packagediscordasar",
+  "version": "1.0.0",
+  "description": "",
+  "exports": "./src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=14.16"
+  },
+  "scripts": {
+    "create": "node ./src/index.js"
+  },
+  "devDependencies": {
+    "electron": "github:discord/electron",
+    "electron-packager": "^16.0.0",
+    "electron-winstaller": "^5.0.0"
+  },
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "get-stream": "^6.0.1",
+    "glob": "^8.0.3",
+    "tar": "^6.1.11"
+  },
+  "author": "",
+  "license": "ISC"
+}
