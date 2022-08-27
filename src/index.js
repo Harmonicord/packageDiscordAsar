@@ -6,13 +6,15 @@ import path from "path";
 
 import { pack } from "./pack.js";
 
+const version = JSON.parse(fs.readFileSync('./appData/resources/build_info.json'))['version']
+
 await packager({
   dir: './',
   prebuiltAsar: "./input/app.asar",
   out: "./output/unpacked",
   platform: ["win32"],
   arch: ["ia32"],
-  appVersion: "1.0.48",
+  appVersion: version,
   name: "harmonicord",
   icon: "./appData/app.ico",
 });
@@ -36,7 +38,7 @@ try {
     outputDirectory: "./output/packed/win32",
     authors: "Harmonicord",
     exe: "Harmonicord.exe",
-    version: "1.0.48",
+    version: version,
     description: "lol",
     title: "harmonicord",
     name: "harmonicord",

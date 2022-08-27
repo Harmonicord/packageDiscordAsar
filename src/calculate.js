@@ -4,9 +4,9 @@ import fs from "fs";
 export function calculate(files) {
   let mappedFiles = {};
   for (const file of files) {
-    const fileName = file
-      .replace(/[A-Za-z:\\\\]*(files)/, "")
-      .replace(/\\/, "/");
+    console.log(file);
+    const fileName = file.replace(/.*(files)\\/, "").replace(/\\/, "/");
+    console.log(fileName)
     const hash = crypto
       .createHash("sha256")
       .update(fs.readFileSync(file))
@@ -17,4 +17,4 @@ export function calculate(files) {
   }
   let finalJson = { manifest_version: 1, files: { ...mappedFiles } };
   return JSON.stringify(finalJson);
-};
+}

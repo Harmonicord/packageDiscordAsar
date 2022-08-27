@@ -8,12 +8,12 @@
     "node": ">=14.16"
   },
   "scripts": {
-    "create": "node ./src/index.js"
+    "start": "node ./src/index.js"
   },
   "devDependencies": {
-    "electron": "github:discord/electron",
+    "electron": "^20.1.0",
     "electron-packager": "^16.0.0",
-    "electron-winstaller": "^5.0.0"
+    "electron-winstaller": "github:Harmonicord/electron-winstaller"
   },
   "dependencies": {
     "fs-extra": "^10.1.0",
