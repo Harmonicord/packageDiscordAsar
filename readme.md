@@ -5,14 +5,14 @@ Creates a Discord-like setup, full.distro and delta.distro (experimental)
 ## Roadmap
 
 ### General
--[] Converting to typescript
--[] Mac support
--[] Linux support
--[] Code signing
+- [ ] Converting to typescript
+- [ ] Mac support
+- [ ] Linux support
+- [ ] Code signing
 
 ### *.distro
--[] Arg `--enable-distro` for compiling full.distro and delta.distro
--[] delta.distro compiling
+- [ ] Arg `--enable-distro` for compiling full.distro and delta.distro
+- [ ] delta.distro compiling
 
 ## Required Files in appData directory
 
