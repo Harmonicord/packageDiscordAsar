@@ -45,6 +45,8 @@ try {
     noDelta: true,
     noMsi: true,
     setupIcon: "./appData/app.ico",
+    loadingGif: fs.existsSync('./input/install.gif') ? './input/install.gif' : undefined,
+    setupExe: 'HarmonicordSetup.exe'
   });
   console.log("It worked!");
 } catch (e) {

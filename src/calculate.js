@@ -4,9 +4,7 @@ import fs from "fs";
 export function calculate(files) {
   let mappedFiles = {};
   for (const file of files) {
-    console.log(file);
     const fileName = file.replace(/.*(files)\\/, "").replace(/\\/, "/");
-    console.log(fileName)
     const hash = crypto
       .createHash("sha256")
       .update(fs.readFileSync(file))
